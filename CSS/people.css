@@ -1,0 +1,24 @@
+.alignpic{
+  float: left;
+  width: 303px;
+  height: 360px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.inline-block {
+   display: inline-block;
+}
+
+
+.textalign {
+   text-align: middle;
+   align: top;
+}
+
+.donatenow {
+  width: 303px;
+  height: 48px;
+  padding-left: 20px;
+  padding-right: 20px;
+}

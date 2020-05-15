@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="EN">
+<!-- Programmer: Enes Sert -->
+
+
+  <head>
+    <title>Welcome to donation page!</title>
+	<link rel="stylesheet" type="text/css" href="https://swe.umbc.edu/~mser1/is448/d5_enes/donate.css" />
+  </head>
+
+  <body>
+	<h1>Your support will be much appreciated!</h1>
+  <br/>
+  <br/>
+
+
+	<form name ="info" action = "https://swe.umbc.edu/~mser1/is448/d5_enes/donate.php" method="post" >
+
+
+    <h2>Donation</h2>
+    <br/>
+
+
+    <label> Donation Amount:  $
+       <input type = "text" name = "donation_amount" size = "25" maxlength="19" />
+    </label>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <h2>Credit Card</h2>
+    <br/>
+
+
+    <label> Card Type:
+       <input type = "radio" name = "card_type" value="Visa" checked="checked" /> Visa
+    </label>
+    <label>
+        <input type = "radio" name = "card_type" value="Mastercard" /> Mastercard
+    </label>
+    <label>
+       <input type = "radio" name = "card_type" value="American Express" checked="checked" /> American Express
+    </label>
+    <label>
+        <input type = "radio" name = "card_type" value="Discover" /> Discover
+    </label>
+    <br/>
+    <br/>
+
+
+    <label> Card Number:
+        <input type = "text" name = "card_number" size = "25" maxlength="19" />
+    </label>
+    &nbsp;
+    &nbsp;
+
+    <label> Security Code:
+        <input type = "text" name = "security_code" size = "10" maxlength="5" />
+    </label>
+    <br/>
+    <br/>
+
+
+    <label> Expiration Month:
+      <select name = "exp_month">
+        <option disabled selected value> -- Select -- </option>
+        <option> 01 - January </option>
+        <option> 02 - February </option>
+        <option> 03 - March </option>
+        <option> 04 - April </option>
+        <option> 05 - May </option>
+        <option> 06 - June </option>
+        <option> 07 - July </option>
+        <option> 08 - August </option>
+        <option> 09 - September </option>
+        <option> 10 - October </option>
+        <option> 11 - November </option>
+        <option> 12 - December </option>
+      </select>
+    </label>
+    &nbsp;
+    &nbsp;
+
+    <label> Expiration Year:
+      <select name = "exp_year">
+        <option disabled selected value> -- Select -- </option>
+        <option> 2019 </option>
+        <option> 2020 </option>
+        <option> 2021 </option>
+        <option> 2022 </option>
+        <option> 2023 </option>
+        <option> 2024 </option>
+        <option> 2025 </option>
+        <option> 2026 </option>
+        <option> 2027 </option>
+        <option> 2028 </option>
+        <option> 2029 </option>
+        <option> 2030 </option>
+        <option> 2031 </option>
+        <option> 2032 </option>
+        <option> 2033 </option>
+        <option> 2034 </option>
+        <option> 2035 </option>
+        <option> 2036 </option>
+        <option> 2037 </option>
+        <option> 2038 </option>
+        <option> 2039 </option>
+      </select>
+    </label>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <h2>Billing Details</h2>
+    <br/>
+
+    <label> First Name:
+        <input type = "text" name = "first_name" size = "20" maxlength="20" />
+    </label>
+    &nbsp;
+    &nbsp;
+
+    <label> M.I:
+        <input type = "text" name = "middle_initial" size = "5" maxlength="2" />
+    </label>
+    &nbsp;
+    &nbsp;
+
+    <label> Last Name:
+        <input type = "text" name = "last_name" size = "20" maxlength="20" />
+    </label>
+    <br/>
+    <br/>
+
+
+    <label> Address:
+        <input type = "text" name = "address" size = "44" maxlength="44" />
+    </label>
+    <br/>
+    <br/>
+
+
+    <label> City:
+        <input type = "text" name = "city" size = "25" maxlength="25" />
+    </label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <label> State:
+        <input type = "text" name = "state" size = "6" maxlength="2" />
+    </label>
+    (XX)
+    <br/>
+    <br/>
+
+
+    <label> Zip:
+        <input type = "text" name = "zip" size = "15" maxlength="5" />
+    </label>(XXXXX)
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <label> Country:
+        <input type = "text" name = "country" size = "29" maxlength="29" />
+    </label>
+    <br/>
+    <br/>
+
+
+    <label> E-mail:
+        <input type = "text" name = "e_mail" size = "33" maxlength="33" />
+    </label>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <label> Phone:
+        <input type = "text" name = "phone" size = "19" maxlength="19" />
+    </label>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <label> How did you hear about us?:
+      <select name = "hear_about_us">
+        <option disabled selected value> -- Select -- </option>
+        <option> Direct Mail </option>
+        <option> E-mail </option>
+        <option> Friends/Family </option>
+        <option> Newspaper/Magazine Add </option>
+        <option> Phone Call </option>
+        <option> Poster </option>
+        <option> Radio Ad </option>
+        <option> TV Ad </option>
+        <option> Web Ad </option>
+        <option> Facebook </option>
+        <option> Twitter </option>
+        <option> WhatsApp </option>
+        <option> Instagram </option>
+        <option> YouTube </option>
+        <option> Other </option>
+      </select>
+    </label>
+    <br/>
+    <br/>
+    <br/>
+
+
+    <input type="submit" value ="Submit" />
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <input type = "reset" value="Reset Entry" />
+
+
+	</form>
+
+</body>
+
+</html>

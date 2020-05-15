@@ -1,0 +1,10 @@
+/* Programmer: Enes Sert */
+
+body {
+    width: 600px;
+    margin: 1em auto;
+    background-color: teal;
+    border: 10px #D8C858 solid;
+    padding: 0.5em;
+    color: white;
+}

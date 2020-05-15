@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<script type="text/javascript">
+
+function validateForm(event) {
+
+    var username = document.getElementById("username").value,
+    password = document.getElementById("password").value,
+    errors = [];
+
+    if (!username){
+		errors.push("Please enter your username.");
+    }
+
+    if (!password){
+		errors.push("Please enter your password.");
+	}
+
+    if (errors.length) {
+		event.preventDefault();
+		alert(errors.join("\n"));
+    }
+
+}
+</script>
+
+<head>
+    <title>Funding for Humanity</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://swe.umbc.edu/~kwon8/is448/deliv3/generic.css" type="text/css"/>
+  	<link rel="stylesheet" type="text/css" href="https://swe.umbc.edu/~kwon8/is448/deliv3/loginpage.css" title="style" />
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/prototype/1.6.0.3/prototype.js"></script>
+    <script src = "lastEntryTime.js"></script>
+</head>
+
+<body>
+    <p><span class = "title"><a href="deli3home.html">Funding for Humanity</a></span>
+      	<span class = "leftfloat">
+          <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/create_project.html">Start a Project</a>  |
+          <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/allprojects.html">All Projects</a>
+        </span>
+
+      	<span class = "rightfloat">
+          <a href="loginpage.html">Sign in </a>            		</span>
+    <p>
+
+    <hr>
+
+    <h3>
+		<a href="https://swe.umbc.edu/~kwon8/is448/deliv3/deli3home.html">Home</a>  |
+        <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/people.html">People</a>  |
+        <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/regional.html">Regional</a>  |
+        <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/world.html">World</a>  |
+        <a href="https://swe.umbc.edu/~kwon8/is448/deliv3/aboutus.html">About Us</a>
+    </h3>
+
+<hr>
+
+
+
+
+
+<div class ="overview">
+<h2 class ="account"> Don’t have an account? <a href="createpage.html"> Create one!</a> </h2>
+<hr>
+<h1 class ="LogIn">  Login   </h1>
+
+
+
+<form name ="info" action = "LogIn.php" method="post"onsubmit="validateForm(event)">
+<p>
+ Username: <br> <input type ="text" name ="Username" id = "username" size ="25" />
+</p>
+<p>
+ Password: <br> <input type ="text" name ="Password" id = "password" size ="25" onkeyup="showTime()" />
+</p>
+<br /> <br /><br /> <br />
+LAST KEY ENTERED AT: &nbsp; &nbsp; <input type="text" id="time" size= "10"/>
+
+
+
+<p><br />
+<input type = "submit" value="Sign In" />
+
+</p>
+<hr>
+<h3 class ="Forgot"><a href="forgotpassword.html"> Forgot Password?</a>  </h3>
+<h3 class ="Forgot"><a href="forgotemail.html"> Forgot Username?</a> </h3>
+
+
+
+</div>
+</form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+.alignpic{
+	height: 360px;
+}
+
+.donatenow {
+	height: 100px;
+}
+
+.viewall {
+	text-align: right;
+	font-size: 16px;
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	vertical-align: center;
+	font-size: 24pt;
+	font-weight: bold;
+	table-layout: fixed;
+}
+
+td {
+	width: 25%;
+	padding: 20px;
+}
+
+img {
+	display: inline-block;
+	object-fit: cover;
+	height: 300px;
+	width: 303px;
+	border-radius: 8px;
+}
